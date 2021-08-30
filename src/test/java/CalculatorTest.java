@@ -28,4 +28,10 @@ class CalculatorTest {
                 () -> assertEquals(4, Calculator.multiply(-2, -2)),
                 () -> assertEquals(0, Calculator.multiply(1, 0)));
     }
+
+    @Test
+    @DisplayName("Somando")
+    public void somar() {
+        assertEquals(6, Calculator.soma(4,2));
+    }
 }

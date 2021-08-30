@@ -1,5 +1,3 @@
-import org.junit.Test;
-
 import java.util.stream.DoubleStream;
 
 public class Calculator {
@@ -12,5 +10,9 @@ public class Calculator {
     static double multiply(double... operands) {
         return DoubleStream.of(operands)
                 .reduce(1, (a, b) -> a * b);
+    }
+
+    static double soma(double x, double y) {
+        return x + y;
     }
 }
